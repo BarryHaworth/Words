@@ -22,4 +22,4 @@ temp <- words %>% select(length,word) %>% rowwise() %>% mutate(rot13 = rot13(wor
 
 rotwords <- inner_join(temp, words %>% select(word), by=c("rot13"="word")) %>% filter(word<rot13)
 
-write.csv(rotwords, "rotwords.csv",row.names = F)
+write.csv(rotwords, "C:/R/Words/data/rotwords.csv",row.names = F)
