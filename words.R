@@ -6,21 +6,6 @@
 
 setwd("c:/r/Words/data")
 
-singles=scan(file="Singles.txt",what=character())
-singles=grep("1",singles,invert=TRUE,value=TRUE)
-singles=grep("2",singles,invert=TRUE,value=TRUE)
-singles=grep("3",singles,invert=TRUE,value=TRUE)
-singles=grep("4",singles,invert=TRUE,value=TRUE)
-singles=grep("5",singles,invert=TRUE,value=TRUE)
-singles=grep("6",singles,invert=TRUE,value=TRUE)
-singles=grep("7",singles,invert=TRUE,value=TRUE)
-singles=grep("8",singles,invert=TRUE,value=TRUE)
-singles=grep("9",singles,invert=TRUE,value=TRUE)
-singles=grep("0",singles,invert=TRUE,value=TRUE)
-singles=grep("'",singles,invert=TRUE,value=TRUE)
-singles=grep("&",singles,invert=TRUE,value=TRUE)
-singles=grep("\\n",singles,invert=TRUE,value=TRUE)
-
 num=c("02","03","04","05","06","07","08","09","10","11","12","13","14","15")
 infile=sprintf("%s_letter.txt", num)
 
